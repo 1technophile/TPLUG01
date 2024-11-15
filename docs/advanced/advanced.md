@@ -2,32 +2,26 @@
 
 ## LED Indicator Guide
 
-### Steady Orange
+### Steady Orange/Yellow
 The plug is generating an Access Point for network onboarding.
 <p align="left">
   <img src="./../img/Theengs-plug01-orange.png">
 </p>
 
-### Orange (5 seconds on, 5 seconds off)
-The plug is disconnected from the MQTT broker.
+### Blinking Orange
+The plug is disconnected from the MQTT broker/Network.
 
-### Orange (2 seconds on, 2 seconds off)
-The plug is disconnected from the WiFi network.
-
-### Steady Green
+### Green
 The plug is connected to both the network and the MQTT broker.
 <p align="left">
   <img src="./../img/Theengs-plug01-green.png">
 </p>
 
-### Steady Blue
+### Blue
 An update or operation is currently in progress.
 <p align="left">
   <img src="./../img/Theengs-plug01-blue.png">
 </p>
-
-### Flashing Blue
-Scanning or communication is in progress.
 
 ### Steady Red (Power LED)
 An overcurrent has been detected, and the relay has been automatically turned off.
@@ -107,7 +101,7 @@ The BLE parameters can be changed with the commands detailed into [BLE gateway u
 
 ## Updating Theengs Plug
 Theengs plug can benefit from Over The Air updates following these different methods:
-* From Home Assistant directly if you have version 1.5.0 or more, Settings->Devices & Services->Devices, click on the plug, click on the firmware version, click Update
+* From Home Assistant directly if you have version 1.8.0 or more, Settings->Devices & Services->Devices, click on the plug, click on the firmware version, click Update
 * From the WifiManager portal, by uploading a binary directly to the plug
   * Download the last version binary named "Theengs-Plug-firmware" from the Github [release page of OpenMQTTGateway](https://github.com/1technophile/OpenMQTTGateway/releases)
   * Reset the plug with a long button press
