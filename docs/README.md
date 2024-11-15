@@ -2,7 +2,7 @@
 
 Discover the **Theengs Plug**, a smart plug, BLE gateway, and energy meter in one device. This guide will help you quickly connect your plug to an MQTT broker.
 
-1. **Plug it in**: Plug the device into an outlet. An orange LED will turn on steadily.
+1. **Plug it in**: Plug the device into an outlet. An orange/yellow LED will turn on steadily.
 <p align="left">
   <img src="./img/Theengs-plug01-orange.png">
 </p>
