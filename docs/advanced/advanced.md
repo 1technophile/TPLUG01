@@ -102,8 +102,8 @@ The BLE parameters can be changed with the commands detailed into [BLE gateway u
 ## Updating Theengs Plug
 Theengs plug can benefit from Over The Air updates following these different methods:
 * From Home Assistant directly if you have version 1.8.0 or more, Settings->Devices & Services->Devices, click on the plug, click on the firmware version, click Update
-* From the WifiManager portal, by uploading a binary directly to the plug
-  * Download the last version binary named "Theengs-Plug-firmware" from the Github [release page of OpenMQTTGateway](https://github.com/1technophile/OpenMQTTGateway/releases)
+* From the WifiManager portal, by uploading a binary directly to the plug for all versions
+  * Download the last version binary named "theengs-plug-firmware.bin" from the Github [release page of OpenMQTTGateway](https://github.com/1technophile/OpenMQTTGateway/releases)
   * Reset the plug with a long button press
   * Connect to the Wifi access point with your smartphone
   * Click Update
@@ -112,15 +112,7 @@ Theengs plug can benefit from Over The Air updates following these different met
   * Reconfigure the plug into the Wifi portal
 * From an MQTT command to trigger the download of the firmware from a webserver
   * Connect to your MQTT broker with a client like MQTT Explorer
-  * Publish the update command like below (OTAPASSWORD being your Over The Air password if you changed it during the configuration):
-```
-{
-  "version": "v1.6.0",
-  "password": "OTAPASSWORD",
-  "url": "https://github.com/1technophile/OpenMQTTGateway/releases/download/v1.6.0/theengs-plug-firmware.bin"
-}
-```
-or if you have version >= 1.5.0
+  * Publish the update command like below if you have version >= 1.8.0
 ```
 {
   "version": "latest"
